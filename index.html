@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Sticky Navigation Bar Styles */
+        .navbar {
+            padding: 0.5rem 1rem;
+        }
+    
+        .navbar-brand {
+            font-size: 1.5rem;
+        }
+    
+        .nav-link {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+    
+        .nav-link:hover {
+            background-color: #555;
+        }
+    
+        .navbar-dark .navbar-nav .nav-link {
+            color: #fff;
+        }
+    
+        .navbar-dark .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255,255,255,.5)" stroke-linecap="round" stroke-width="2" d="M4 6h22M4 14h22M4 22h22"/%3E%3C/svg%3E');
+        }
+    
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    
+        /* Ensure there is enough padding on the top for the sticky navbar */
+        body {
+            padding-top: 56px; /* Adjust this value if your navbar height changes */
+        }
+    
+        /* General Styles */
+        body {
+            background-color: #eeeeee;
+        }
+    
+        /* About Section Styles */
+        .about-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+    
+        .about-section h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+    
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #333;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+    
+        .about-text {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    
+        .name {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    
+        /* Contact Me Section Styles */
+        .bg-navy {
+            background-color: #1e1e1e;
+        }
+    
+        .text-white {
+            color: #ffffff;
+        }
+    
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+    
+        .social-icon {
+            width: 30px;
+            height: 30px;
+        }
+    
+        .btn-dark {
+            background-color: #1e1e1e;
+            border: none;
+        }
+    
+        .btn-dark:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#home">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<section id="home">
+    <!-- Home section content -->
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <h1>About</h1>
+    <img src="profile-pic (4).png" alt="Profile Picture" class="profile-pic">
+    <div class="name">FATODU, EBENEZER OPEYEMI</div>
+    <p class="about-text">Hi, I'm Opeyemi a Data Scientist.</p>
+    <p class="about-text">I firmly believe that data, when used wisely, can drive tremendous growth and innovation. I have developed a unique blend of technical expertise and creative communication skills, enabling me to effectively communicate complex data findings through reports, visualizations, and models. Understanding the significance of data insights is crucial for ensuring stakeholders can make informed decisions based on analyses. Therefore, my mission is to help individuals and organizations harness the power of data to achieve their goals and drive meaningful progress. I strive to make data accessible to stakeholders by effectively communicating complex data findings through reports, visualizations, charts, and model building.</p>
+    <p class="about-text">My diverse experiences in analyzing consumer behavior, assessing financial risk, and streamlining operations have honed my ability to uncover valuable insights from data and translate them into actionable plans. I utilize the power of data mining and pattern recognition to ensure the accuracy, completeness, and validity of data, enabling data-driven business decisions. By providing insightful data analysis and reporting, I aim to optimize business strategies and deliver comprehensive data visualization solutions. My goal is to empower organizations to leverage data effectively, ensuring they can make strategic decisions that drive success.</p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="container my-5">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row">
+        <!-- Project Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="icons/DIABETES PREDICTIVE ANALYSIS.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                    <h5 class="card-title">HEALTH ANALYSIS</h5>
+                    <p class="card-text">This report presents an exploratory data analysis (EDA) and logistic regression model development for a diabetes dataset. The dataset is analysed to understand its characteristics, distribution, and relationship between variables. A logistic regression model is then built to predict the outcome variable.</p>
+                    <a href="https://github.com/yemifatodu/meriskill-internship-daibetes-report/blob/main/README.md" class="btn btn-primary">Analysis</a>
+                    <a href="http://127.0.0.1:8051" class="btn btn-secondary">Visualisation</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="icons/Dashboard 1 (4).png" class="card-img-top" alt="Project 6">
+                <div class="card-body">
+                    <h5 class="card-title">ADIDAS 2020/21 REPORT</h5>
+                    <p class="card-text">The Adidas sales report for 2020 shows that sales were significantly impacted by the COVID-19 pandemic. Despite these challenges, the sales channels showed resilience, and key product lines demonstrated strong market presence.</p>
+                    <a href="https://github.com/yemifatodu/addidas-2020-2021-sales-report" class="btn btn-primary">Analysis</a>
+                    <a href="https://public.tableau.com/app/profile/yemi.fatodu1473/viz/ADIDASPRODUCTSALESANALYSISFORYEAR2020AND2021/Dashboard1" class="btn btn-secondary">Visualisation</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="project section/SALEANALYSIS.png" class="card-img-top" alt="Project 3">
+                <div class="card-body">
+                    <h5 class="card-title">SALES' ANALYSIS</h5>
+                    <p class="card-text">The sales analysis dashboard reveals significant growth driven by our new marketing strategy, customer feedback and purchasing trends suggest promising areas for product improvement and market expansion.</p>
+                    <a href="https://github.com/yemifatodu/Sale_Data_MeriSkill_internship_project" class="btn btn-primary">Analysis</a>
+                    <a href="https://public.tableau.com/app/profile/yemi.fatodu1473/viz/MeriSkillInternship1SalesDashBoard/Dashboard1" class="btn btn-secondary">Visualisation</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project Card 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="icons/Dashboard 1 (1).png" class="card-img-top" alt="Project 4">
+                <div class="card-body">
+                    <h5 class="card-title">SHOPPER'S TREND</h5>
+                    <p class="card-text">Analysed customer purchase behaviour to uncovering trends, preferences, and insights to enhance marketing strategies and customer experience.</p>
+                    <a href="https://github.com/yemifatodu/SHOPPERS-TREND" class="btn btn-primary">Analysis</a>
+                    <a href="https://public.tableau.com/app/profile/yemi.fatodu1473/viz/SHOPPERSTREND/Dashboard1" class="btn btn-secondary">Visualisation</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project Card 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="icons/TITANIC.jpg" class="card-img-top" alt="Project 5">
+                <div class="card-body">
+                    <h5 class="card-title">THE TITANIC</h5>
+                    <p class="card-text">Descriptive Analysis into the survival patterns and factors influencing outcomes in the Titanic disaster through data analysis.</p>
+                    <a href="https://github.com/yemifatodu/THE-TITANIC-PROJECT-VOYAGE-OF-FATE" class="btn btn-primary">Analysis</a>
+                    <a href="https://public.tableau.com/app/profile/yemi.fatodu1473/viz/TitleVoyageofFateUnravelingtheTitanicTragedy/Dashboard1" class="btn btn-secondary">Visualisation</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project Card 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="icons/Dashboard 1 (3).png" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                    <h5 class="card-title">H.R. DASHBOARD</h5>
+                    <p class="card-text">A comprehensive HR analysis dashboard that highlighted that job satisfaction is a key factor influencing employee retention.</p>
+                    <a href="https://github.com/yemifatodu/HR_Analysis_meriSkill_project_Internship" class="btn btn-primary">Analysis</a>
+                    <a href="https://public.tableau.com/app/profile/yemi.fatodu1473/viz/HRAnalysisProjectMeriSkill/Dashboard1" class="btn btn-secondary">Visualisation</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="container my-5">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div class="row">
+        <!-- Skill Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <img src="skill section/python.png" class="card-img-top" alt="Python" style="max-width: 80px; margin: 20px auto;">
+                <div class="card-body">
+                    <h5 class="card-title">Python</h5>
+                    <p class="card-text">With a strong command of Python, my proficiency in libraries such as Pandas, NumPy, and scikit-learn ensures efficient and accurate data manipulation and analysis.</p>
+                    <a href="https://bit.ly/LI-YEMIFATODU" class="btn btn-primary">Link to course</a>
+                </div>
+            </div>
+        </div>
+        <!-- Skill Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <img src="skill section/TABLEAU LOGO.png" class="card-img-top" alt="Tableau" style="max-width: 80px; margin: 20px auto;">
+                <div class="card-body">
+                    <h5 class="card-title">Tableau</h5>
+                    <p class="card-text">I possess advanced skills in Tableau, my ability to transform complex data sets into intuitive dashboards has consistently enabled stakeholders to gain valuable insights.</p>
+                    <a href="https://tabsoft.co/3QUmmCz" class="btn btn-primary">Link to course</a>
+                </div>
+            </div>
+        </div>
+        <!-- Skill Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <img src="skill section/SQL LOGO.png" class="card-img-top" alt="SQL" style="max-width: 80px; margin: 20px auto;">
+                <div class="card-body">
+                    <h5 class="card-title">SQL</h5>
+                    <p class="card-text">I am adept at using SQL for querying and managing large datasets, optimising database performance, and ensuring data integrity.</p>
+                    <a href="https://bit.ly/LI-YEMIFATODU" class="btn btn-primary">Link to course</a>
+                </div>
+            </div>
+        </div>
+        <!-- Skill Card 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <img src="skill section/charts-6246450_1920.pngVISUALIZATION.png" class="card-img-top" alt="Data Storytelling" style="max-width: 80px; margin: 20px auto;">
+                <div class="card-body">
+                    <h5 class="card-title">Data Storytelling</h5>
+                    <p class="card-text">My ability to present data in a compelling way helps bridge the gap between technical analysis and strategic decision-making.</p>
+                    <a href="https://bit.ly/LI-YEMIFATODU" class="btn btn-primary">Link to course</a>
+                </div>
+            </div>
+        </div>
+        <!-- Skill Card 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <img src="skill section/excel.png" class="card-img-top" alt="Excel" style="max-width: 80px; margin: 20px auto;">
+                <div class="card-body">
+                    <h5 class="card-title">Excel</h5>
+                    <p class="card-text">I am proficient in Excel, utilising advanced functions, pivot tables, and macros to streamline data analysis and reporting.</p>
+                    <a href="https://bit.ly/LI-YEMIFATODU" class="btn btn-primary">Link to course</a>
+                </div>
+            </div>
+        </div>
+        <!-- Skill Card 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <img src="skill section/ml.png" class="card-img-top" alt="Machine Learning" style="max-width: 80px; margin: 20px auto;">
+                <div class="card-body">
+                    <h5 class="card-title">Machine Learning</h5>
+                    <p class="card-text">I have hands-on experience with various algorithms, including regression, classification, and clustering, to solve real-world problems.</p>
+                    <a href="https://bit.ly/LI-YEMIFATODU" class="btn btn-primary">Link to course</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Me Section -->
+<section id="contact" class="bg-dark text-white py-5" >
+    <div class="container text-center">
+        <h2>Contact Me</h2>
+        <div class="row justify-content-center my-4">
+            <div class="col-md-4 mb-3">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="icons/EMAIL ICON.jpg" alt="Email Icon" class="icon">
+                    <span class="ml-2">yemifatodu@gmail.com</span>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="icons/PHONE ICON.jpg" alt="Phone Icon" class="icon">
+                    <span class="ml-2">+1 409 269 5122</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-center mt-2">
+                    <img src="icons/PHONE ICON.jpg" alt="Phone Icon" class="icon">
+                    <span class="ml-2">+234 7033736377</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <!-- Social Media Icons -->
+            <a href="https://wa.me/qr/J62NBXCV5RXLA1" class="btn btn-dark btn-circle mx-2" data-toggle="tooltip" data-placement="top" title="whatsapp">
+                <img src="whatsapp.jpg" alt="whatsapp" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://bit.ly/LI-YEMIFATODU" class="btn btn-dark btn-circle mx-2" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+                <img src="icons/LINKEDIN ICON.jpg" alt="LinkedIn" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://bit.ly/X-YEMIFATODU" class="btn btn-dark btn-circle mx-2" data-toggle="tooltip" data-placement="top" title="Twitter">
+                <img src="icons/TWITERICON.jpg" alt="Twitter" style="width: 30px; height: 30px;">
+            </a>
+            <a href="http://Github.com/yemifatodu" class="btn btn-dark btn-circle mx-2" data-toggle="tooltip" data-placement="top" title="GitHub">
+                <img src="icons/GITHUB ICON.jpg" alt="GitHub" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://bit.ly/YEMIFATODU" class="btn btn-dark btn-circle mx-2" data-toggle="tooltip" data-placement="top" title="YouTube">
+                <img src="icons/YOUTUBE ICON.jpg" alt="YouTube" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://www.instagram.com/dataanalyst_scientist?igsh=NTc4MTIwNjQ2YQ==" class="btn btn-dark btn-circle mx-2" data-toggle="tooltip" data-placement="top" title="Instagram">
+                <img src="icons/INSTAGRAM ICON.jpg" alt="Instagram" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://t.me/Yemi_Fatodu" class="btn btn-dark btn-circle mx-2" data-toggle="tooltip" data-placement="top" title="telegram">
+                <img src="telegram.jpg" alt="telegram" style="width: 30px; height: 30px;">
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Add this script at the end of your file before the closing </body> tag for tooltips -->
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Opeyemi Ebenezer Fatodu. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
