@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Sticky Navigation Bar Styles */
+        .navbar {
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: #555;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-dark .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255,255,255,.5)" stroke-linecap="round" stroke-width="2" d="M4 6h22M4 14h22M4 22h22"/%3E%3C/svg%3E');
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Ensure there is enough padding on the top for the sticky navbar */
+        body {
+            padding-top: 56px; /* Adjust this value if your navbar height changes */
+            background-color: #eeeeee;
+        }
+
+        /* About Section Styles */
+        .about-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .about-section h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid #333;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .about-text {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Icon size adjustment */
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#home">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<section id="home">
+    <!-- Home section content -->
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <h1>About</h1>
+    <img src="web profile (4).png" alt="Profile Picture" class="profile-pic">
+    <div class="name">FATODU, EBENEZER OPEYEMI</div>
+    <p class="about-text">Hi, I'm Opeyemi</p>
+    <p class="about-text">I believe in the transformative power of data to fuel growth and innovation. Throughout my projects, such as developing HR dashboards to analyze employee retention and conducting EDA for the Titanic dataset, I’ve honed the ability to present complex insights through intuitive visualizations, reports, and models. My mission is to help stakeholders translate data into actionable insights, ensuring informed decision-making. By communicating findings through dashboards, models, and reports, I empower organizations to utilize data effectively to achieve strategic goals and drive meaningful progress.</p>
+    <p class="about-text">In my project experiences, such as analyzing Adidas sales trends and developing a predictive model for diabetes outcomes, I’ve mastered the art of uncovering valuable insights from data. By leveraging advanced techniques like logistic regression and pattern recognition, I ensure data integrity and accuracy. My expertise lies in transforming raw data into clear, actionable insights that optimize business strategies. Whether streamlining operations or guiding market expansion, I empower organizations to make data-driven decisions that enhance performance and drive success.</p>
+
+<!-- Projects Section -->
+<section id="projects" class="container my-5">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row">
+        <!-- Project Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="DIABETES PREDICTIVE ANALYSIS.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                    <h5 class="card-title">HEALTH ANALYSIS</h5>
+                    <p class="card-text">The Health Analysis Report utilizes exploratory data analysis (EDA) on a diabetes dataset to uncover variable distributions and correlations. It develops a logistic regression model to predict diabetes outcomes based on significant variables, providing actionable insights for healthcare decision-making. This analysis highlights the effectiveness of data-driven approaches in enhancing health interventions and outcomes.</p>
+                    <a href="https://github.com/yemifatodu/DIABETESPROJECT-MERI-SKILL#presentation-of-report-and-findings" class="btn btn-primary">REPORT</a>
+                    <a href="https://github.com/yemifatodu/DIABETESPROJECT-MERI-SKILL/blob/main/diabetes%20pro.ipynb" class="btn btn-secondary">API MODEL</a>
+                    <a href="https://medium.com/@yemifatodu/harnessing-data-science-for-diabetes-prediction-transforming-healthcare-through-predictive-b57272b224e1" class="btn btn-secondary">Blog Post</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="Dashboard 1 (4).png" class="card-img-top" alt="Project 6">
+                <div class="card-body">
+                    <h5 class="card-title">ADIDAS 2020/21 REPORT</h5>
+                    <p class="card-text">The Adidas 2020/21 Sales Report analyzes the company’s performance during the COVID-19 pandemic, highlighting resilience across sales channels despite significant challenges. It examines shifts in consumer demand and Adidas' strategic responses, emphasizing the brand's adaptability in a volatile retail environment. The report identifies growth opportunities and key product successes, showcasing how data-driven insights can guide strategic decision-making.</p>
+                    <a href="https://github.com/yemifatodu/ADIDAS-PRODUCT-SALES-ANALYSIS-FOR-THE-YEAR-2020-AND-2021#adidas-product-sales-analysis-for-the-year-2020-and-2021" class="btn btn-primary">REPORT</a>
+                    <a href="https://public.tableau.com/app/profile/yemi.fatodu1473/viz/ADIDASPRODUCTSALESANALYSISFORYEAR2020AND2021/Dashboard1" class="btn btn-secondary">DASHBOARD</a>
+                    <a href="https://medium.com/@yemifatodu/the-digital-shift-how-covid-19-reshaped-adidas-sales-methods-and-what-it-means-for-retailers-6e69e758e62a" class="btn btn-secondary">Blog Post</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="Dashboard 1 (2).png" class="card-img-top" alt="Project 3">
+                <div class="card-body">
+                    <h5 class="card-title">SALES' ANALYSIS</h5>
+                    <p class="card-text">Sales Analysis - Internship Project
+
+                        As part of my internship project, the sales analysis dashboard uncovers significant growth fueled by a revamped marketing strategy. Insights from customer feedback and purchasing trends reveal key opportunities for product enhancements and market expansion. This project demonstrates the value of leveraging data for strategic business decisions.</p>
+                    <a href="https://github.com/yemifatodu/Sale_Data_MeriSkill_internship_project" class="btn btn-primary">REPORT</a>
+                    <a href="https://public.tableau.com/app/profile/yemi.fatodu1473/viz/MeriSkillInternship1SalesDashBoard/Dashboard1" class="btn btn-secondary">DASHBOARD</a>
+                    <a href="https://medium.com/@yemifatodu/the-power-of-data-driven-decision-making-a4edc29eccbc" class="btn btn-secondary">Blog Post</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project Card 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="Dashboard 1 (1).png" class="card-img-top" alt="Project 4">
+                <div class="card-body">
+                    <h5 class="card-title">SHOPPER'S TREND</h5>
+                    <p class="card-text">Key Point: Analyzed customer behavior to identify trends and insights that inform marketing strategies and improve customer experiences.
+
+                        Shopper's Trend Analysis
+                        
+                        This project conducted an in-depth analysis of customer purchasing behaviors, revealing key insights into shopping trends and preferences. These findings are crucial for refining marketing strategies and enhancing customer experiences. By recognizing patterns in buying behavior, businesses can tailor their product offerings and engagement methods, ultimately driving growth and increasing customer satisfaction.</p>
+                    <a href="https://github.com/yemifatodu/SHOPPERS-TREND" class="btn btn-primary">REPORT</a>
+                    <a href="https://public.tableau.com/app/profile/yemi.fatodu1473/viz/SHOPPERSTREND/Dashboard1" class="btn btn-secondary">DASHBOARD</a>
+                    <a href="https://medium.com/@yemifatodu/understanding-customer-purchase-behavior-a-data-driven-approach-a2c7159691b7" class="btn btn-secondary">Blog Post</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project Card 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="TITANIC.jpg" class="card-img-top" alt="Project 5">
+                <div class="card-body">
+                    <h5 class="card-title">THE TITANIC</h5>
+                    <p class="card-text">The Titanic - Descriptive Analysis
+
+                        This analysis explores survival patterns and factors influencing the outcomes of Titanic passengers through data-driven insights. By examining variables such as age, gender, class, and fare, the project identifies trends that determined survival rates. It provides a comprehensive understanding of the demographics most affected, offering valuable insights into human behavior during crises. Ultimately, this analysis enhances our knowledge of decision-making and risk factors in critical situations.</p>
+                    <a href="https://github.com/yemifatodu/THE-TITANIC-PROJECT-VOYAGE-OF-FATE" class="btn btn-primary">REPORT</a>
+                    <a href="https://public.tableau.com/app/profile/yemi.fatodu1473/viz/TitleVoyageofFateUnravelingtheTitanicTragedy/Dashboard1" class="btn btn-secondary">DASHBOARD</a>
+                    <a href="https://medium.com/@yemifatodu/the-titanic-disaster-8b0183632f92" class="btn btn-secondary">Blog Post</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project Card 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="Dashboard 1 (3).png" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                    <h5 class="card-title">H.R. DASHBOARD</h5>
+                    <p class="card-text">HR Dashboard - Internship Project
+
+                        As part of my internship, I developed a comprehensive HR analysis dashboard that revealed job satisfaction as a critical factor influencing employee retention. By analyzing key HR metrics, such as employee engagement and performance, this project provided actionable insights for improving retention strategies. This project emphasizes the importance of data-driven approaches in human resources management.</p>
+                    <a href="https://github.com/yemifatodu/HR_Analysis_meriSkill_project_Internship" class="btn btn-primary">REPORT</a>
+                    <a href="https://public.tableau.com/app/profile/yemi.fatodu1473/viz/HRAnalysisProjectMeriSkill/Dashboard1" class="btn btn-secondary">DASHBOARD</a>
+                    <a href="https://medium.com/@yemifatodu/leveraging-data-in-hr-revolutionizing-workforce-management-with-analytics-ba2d363ee40c" class="btn btn-secondary">Blog Post</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="container my-5">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div class="row">
+        <!-- Skill Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <img src="python.png" class="card-img-top" alt="Python" style="max-width: 80px; margin: 20px auto;">
+                <div class="card-body">
+                    <h5 class="card-title">Python</h5>
+                    <p class="card-text">I possess a strong command of Python, complemented by proficiency in essential libraries such as Pandas, NumPy, and scikit-learn, which enables me to perform data manipulation and analysis efficiently and accurately while tackling complex datasets and deriving actionable insights.</p>
+                    <a href="https://github.com/yemifatodu/Python-Certification-Repos#python-certification-repos" class="btn btn-primary">Link to course</a>
+                </div>
+            </div>
+        </div>
+        <!-- Skill Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <img src="TABLEAU LOGO.png" class="card-img-top" alt="Tableau" style="max-width: 80px; margin: 20px auto;">
+                <div class="card-body">
+                    <h5 class="card-title">Tableau</h5>
+                    <p class="card-text">I possess advanced skills in Tableau, where I excel at transforming complex datasets into intuitive dashboards. This capability consistently empowers stakeholders to extract valuable insights and make data-driven decisions effectively.</p>
+                    <a href="https://tabsoft.co/3QUmmCz" class="btn btn-primary">Link to course</a>
+                </div>
+            </div>
+        </div>
+        <!-- Skill Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <img src="SQL LOGO.png" class="card-img-top" alt="SQL" style="max-width: 80px; margin: 20px auto;">
+                <div class="card-body">
+                    <h5 class="card-title">SQL</h5>
+                    <p class="card-text">I am skilled in utilizing SQL for querying and managing large datasets, optimizing database performance and ensuring data integrity throughout the data lifecycle. My expertise empowers me to extract relevant information efficiently, facilitate complex queries, and perform thorough data analysis. </p>
+                    <a href="https://github.com/yemifatodu/SQL-Certification-Repos#sql-certification-repos" class="btn btn-primary">Link to course</a>
+                </div>
+            </div>
+        </div>
+        <!-- Skill Card 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <img src="charts-6246450_1920.pngVISUALIZATION.png" class="card-img-top" alt="Data Storytelling" style="max-width: 80px; margin: 20px auto;">
+                <div class="card-body">
+                    <h5 class="card-title">Education and Experience</h5>
+                    <p class="card-text">I possess a solid educational background in data science, complemented by hands-on experiences in analyzing diverse datasets. These experiences have sharpened my skills in data manipulation, visualization, and predictive modeling, enabling me to extract actionable insights that support strategic decision-making and drive organizational success.</p>
+                    <a href="https://github.com/yemifatodu/EDUCATION-CERTIFICATE?tab=readme-ov-file#education-certificate" class="btn btn-primary">Link to course</a>
+                </div>
+            </div>
+        </div>
+        <!-- Skill Card 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <img src="excel-logo-8033473_1920.png" class="card-img-top" alt="Excel" style="max-width: 80px; margin: 20px auto;">
+                <div class="card-body">
+                    <h5 class="card-title">Excel</h5>
+                    <p class="card-text">I am proficient in Excel, utilizing advanced functions, pivot tables, and macros to streamline data analysis, enhance reporting, and improve overall efficiency. My capabilities enable me to transform complex datasets into actionable insights, ensuring that stakeholders can make informed decisions quickly and effectively.</p>
+                    <a href="https://github.com/yemifatodu/Excel-Certification-Repos#excel-certification-repos" class="btn btn-primary">Link to course</a>
+                </div>
+            </div>
+        </div>
+        <!-- Skill Card 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-center">
+                <img src="machine-learning-with-python-courses-500x500.webp" class="card-img-top" alt="Machine Learning" style="max-width: 80px; margin: 20px auto;">
+                <div class="card-body">
+                    <h5 class="card-title">Machine Learning</h5>
+                    <p class="card-text">I have hands-on experience with algorithms such as regression, classification, and clustering, enabling me to address real-world problems effectively. This knowledge allows me to implement these algorithms to extract valuable insights from data and support data-driven decision-making. </p>
+                    <a href="https://github.com/yemifatodu/Machine-Learning-Certification-Repos?tab=readme-ov-file#machine-learning-certification-repos" class="btn btn-primary">Link to course</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="bg-dark text-white py-5">
+    <div class="container text-center">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <div class="row justify-content-center my-4">
+            <div class="col-md-4 mb-3">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="EMAIL ICON.jpg" alt="Email Icon" class="icon">
+                    <span class="ms-2">  yemifatodu@gmail.com</span>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="PHONE ICON.jpg" alt="Phone Icon" class="icon">
+                    <span class="ms-2"> +1 409 269 5122</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-center mt-2">
+                    <img src="PHONE ICON.jpg" alt="Phone Icon" class="icon">
+                    <span class="ms-2"> +234 7033736377</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="text-center">
+            <a href="https://wa.me/message/DZFG4Z2JYBIJL1" class="btn btn-pink btn-circle mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="WhatsApp">
+                <img src="whatsappicon.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://www.linkedin.com/in/yemi-fatodu/" class="btn btn-pink btn-circle mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+                <img src="LINKEDIN ICON.jpg" alt="LinkedIn" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://bit.ly/X-YEMIFATODU" class="btn btn-pink btn-circle mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter">
+                <img src="TWITERICON.jpg" alt="Twitter" style="width: 30px; height: 30px;">
+            </a>
+            <a href="http://Github.com/yemifatodu" class="btn btn-pink btn-circle mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+                <img src="GITHUB ICON.jpg" alt="GitHub" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://t.me/Yemi_Fatodu" class="btn btn-pink btn-circle mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram">
+                <img src="telegram.jpg" alt="Telegram" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://medium.com/@yemifatodu" class="btn btn-pink btn-circle mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Medium">
+                <img src="MEDIUM ICON.jpg" alt="Medium" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://bit.ly/YEMIFATODU" class="btn btn-pink btn-circle mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="YouTube">
+                <img src="YOUTUBE ICON.jpg" alt="YouTube" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://www.instagram.com/datascientist_analyst?igshid=NTc4MTIwNjQ2YQ==" class="btn btn-pink btn-circle mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram">
+                <img src="INSTAGRAM ICON.jpg" alt="Instagram" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://www.upwork.com/freelancers/~013e5a1a04e2af9d1b" class="btn btn-pink btn-circle mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Upwork">
+                <img src="upwork.jpg" alt="Upwork" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://www.fiverr.com/yemi_fatodu" class="btn btn-pink btn-circle mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Fiverr">
+                <img src="fiverr.jpg" alt="Fiverr" style="width: 30px; height: 30px;">
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Add Tooltip Script -->
+<script>
+    $(function () {
+        $('[data-bs-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Opeyemi Ebenezer Fatodu. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
